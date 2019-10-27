@@ -1,0 +1,28 @@
+{
+  "name": "github-tray-app",
+  "version": "1.0.0",
+  "description": "GitHub tray web app.",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -m"
+  },
+  "devDependencies": {
+    "electron": "^7.0.0",
+    "electron-builder": "^21.2.0",
+    "eslint": "^6.5.1"
+  },
+  "author": "Chris Brocklesby",
+  "license": "ISC",
+  "build": {
+    "appId": "github-tray-app.id",
+    "mac": {
+      "category": "com.chrisbrocklesby"
+    },
+    "files": [
+      "!dist/*"
+    ]
+  }
+}
