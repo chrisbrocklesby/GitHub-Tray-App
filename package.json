@@ -10,7 +10,7 @@
     "dist": "electron-builder -m"
   },
   "devDependencies": {
-    "electron": "^7.0.0",
+    "electron": "^18.3.7",
     "electron-builder": "^21.2.0",
     "eslint": "^6.5.1"
   },
